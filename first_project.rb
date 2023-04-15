@@ -6,17 +6,30 @@ class Carro
       @modelo = modelo
     end
 
-    def velocidade_maxima
+    def velocidade_maxima()
         250
       
     end
     
-    def descricao
+    def descricao()
         "O carro selecionado foi o #{@marca} do modelo #{@modelo} e velocidade de #{velocidade_maxima} KM/H"  
       
     end
 
+    def verifyOwner()
+      case marca
+      when "Tesla"
+        puts "Elon Musk"
+      when "Ford"
+        puts "Enry Ford"
+      when "Fiat"
+        puts "Sei nao"
+      else
+        "niguno"
+      end
+
+    end
 end
 
-carro = Carro.new "Tesla","Model S"
-puts carro.descricao
+carro = Carro.new "Ford","Model 2"
+puts carro.verifyOwner
