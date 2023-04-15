@@ -47,9 +47,17 @@ class Carro
             i+=1
         end
     end
+
+    def contadorFor
+        for
+            i in 0..10 do
+                puts i
+        end
+    end
 end
 
 carro = Carro.new "Ford","Model 2"
 puts carro.verifyOwner
 puts carro.contador
 puts carro.contadorUntil
+puts carro.contadorFor
