@@ -29,7 +29,18 @@ class Carro
       end
 
     end
+
+    def contador()
+        i = 0
+        while i<=11
+            puts i
+            i+=1
+          
+        end
+        
+    end
 end
 
 carro = Carro.new "Ford","Model 2"
 puts carro.verifyOwner
+puts carro.contador
